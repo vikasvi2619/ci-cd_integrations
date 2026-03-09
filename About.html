@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64f5f6b863.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'poppins', sans;
+        }
+        .section{
+            width: 100%;
+            min-height: 100vh;
+            background-color: rgb(19, 19, 62);
+        }
+
+        .container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 100px;
+        }
+        .content-section{
+            float: left;
+            width: 55%;
+        }
+        .image-section{
+            float:right;
+            width: 40%;
+        }
+        .image-section img{
+            width: 100%;
+            height: auto;
+        }
+        .content-section .title{
+            text-transform: uppercase;
+            font-size: 28px;
+            color: #ff004f;
+        }
+        .content-section .content h3{
+            margin-top: 20px;
+            color: #d7d7d7;
+        }
+        .content-section .content p{
+            color: azure;
+        } 
+        .content-section .social{
+            margin-top: 40px;
+        }
+
+        .content-section .social i{
+            color: rgb(255, 255, 255);
+            font-size: 50px;
+            padding: 0px 10px;
+        }
+        .content-section .social i:hover{
+            color: #ff004f;
+        }
+        @media screen and (max-width: 768px){
+            .container {
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 100px;
+        }
+        .content-section{
+            float: none;
+            width: 55%;
+            display: block;
+            margin: auto;
+        }   
+        .image-section{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        .content-section .title{
+            text-align: center;
+        }
+        }
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: #080808;
+            background-color: #f0ebec;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .home-button:hover {
+            background-color: #ff0066;
+        }
+        .home-button i {
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="section">
+        <button class="home-button">
+            <a href="index.html">
+            <i class="fa-solid fa-home"></i> Home </button>
+        </a>
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Me</h1>
+                </div>
+                <div class="content">
+                    <h3>Hello, My Name is Vikas</h3>
+                    <p>I'm a passionate web developer dedicated to crafting innovative and effective digital solutions. 
+                        My mission is to help businesses and individuals bring their ideas to life through cutting-edge technology and exceptional
+                         user experiences. With a keen eye for detail and a passion for staying up-to-date with the latest industry trends, 
+                         I strive to deliver high-quality solutions that exceed expectations. I'm committed to delivering results that drive real value.</p>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/vikas-vi-512430291/">
+                            <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/vikas_gautam3/">
+                            <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </div>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="images-4.png.png">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

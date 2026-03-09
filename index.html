@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'s - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/64f5f6b863.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(19, 19, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(98, 98, 199);
+            font-size: 1.06rem;
+        }
+
+        .left {
+            font-size: 2.0rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+        }
+
+        .rightsection img {
+            width: 80%;
+
+        }
+
+        main hr{
+            border: 0;
+            background-color: rgb(7, 176, 248);
+            height: 1.2px;
+            margin: 80px 74px
+        }
+
+        .purple {
+            color: rgb(150, 61, 234);
+        }
+
+        #element {
+            color: #ff004f;
+        }
+
+        .secondsection {
+            max-width: 85vw;
+            margin: auto;
+            margin-top: 10px 0;
+
+        }
+        .secondsection{
+            font-size: 1.5rem;
+        } 
+        
+        #services {
+            padding: 30px 0;
+        }
+        
+        .services-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+
+        .services-list div{
+            background: rgb(34, 25, 84);
+            padding: 40px;
+            font-size: 300;
+            border-radius: 10px;
+            transition: background 0.5s, transformed 0.5s;
+        }
+
+        .services-list div i{
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+        .services-list div h2{
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .services-list a{
+            font-size: 1.05rem;
+            color: rgb(10, 234, 196);
+        }
+        .services-list a:hover{
+            color: rgb(98, 98, 199);
+            font-size: 1.09rem;
+        }
+        .services-list div:hover{
+            background: #ff004f;
+            transform: translateY(-10px);
+        }
+
+        
+        #portfolio{
+            padding: 50px 0;   
+        }
+
+        .work-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+        }
+
+        .work{
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .work img{
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+            display: block;
+            transition: transform 0.5s;
+        }
+        .layer h3{
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .work:hover img{
+            transform: scale(1.1);
+        }
+
+        .btn{
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid gray;
+            padding: 14px 50px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: white;
+            transition: background 0.5s;
+        }
+
+        .btn:hover{
+            background: gray;
+
+        }
+
+        @media screen {
+            .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+     
+            
+        }
+
+        @media screen {
+            .services-list div:hover{
+            background: #ff004f;
+            transform: translateY(-10px);
+        }
+    }
+        
+        @media screen {
+            .services-list div{
+            background: rgb(34, 25, 84);
+            padding: 40px;
+            font-size: 300;
+            border-radius: 10px;
+            transition: background 0.5s, transformed 0.5s;
+        }
+
+        .services-list div i{
+            font-size: 70px;
+            margin-bottom: 30px;
+        }
+        .services-list div h2{
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        .services-list a{
+            font-size: 1.05rem;
+            color: rgb(10, 234, 196);
+        }
+        .services-list a:hover{
+            color: rgb(98, 98, 199);
+            font-size: 1.09rem;
+        }
+        .services-list div:hover{
+            background: #ff004f;
+            transform: translateY(-10px);
+        }
+    }
+        @media screen {
+            
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vikas's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html"><Home class="html">Home</a></li>
+                    <li><a href="About me.html"><About class="html">About</a></li>
+                    <li><a href="Contact.html"><Contact class="html">Contact me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name is <span class="purple">Vikas</span>
+                <div>and I'm a passionate</div>
+                <span id="element"></span>
+            </div>
+            
+        </script>
+            <div class="rightsection">
+                <img src="vz.png.png" alt="">
+            </div>
+        </section> 
+
+        <hr>
+        <section class="secondsection">
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Cloud Engineer</h2>
+                            <p>I craft intuitive and visually stunning websites that captivate audiences and drive results. With a focus on user experience, 
+                                I balance form and function to create engaging online presence.</p>
+                                <a href="#">learn more</a>
+
+                            </div>
+
+
+                            <div>
+                                <i class="fa-solid fa-crop"></i>
+                                <h2>Devops Engineer</h2>
+                                <p>I design mobile apps that are both beautiful and functional, providing seamless user experiences that drive engagement and conversion. 
+                                    My goal is to make every interaction effortless and enjoyable. </p>
+                                    <a href="#">learn more</a>
+
+                                </div>
+
+
+                                <div>
+                                    <i class="fa-brands fa-android"></i>
+                                    <h2>AWS Administrator</h2>
+                                    <p>I create user-centered designs that simplify complex interactions and delight users. Through research,
+                                         testing, and iteration, I refine interfaces to make them intuitive, accessible, and aesthetically pleasing.</p>
+                                        <a href="#">learn more</a>
+    
+                                    </div>
+        
+    
+
+
+                     </div>
+
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="imagespf-2.png.jpg">
+                    <div class="layer">
+                    <h3>Website<h3>
+                    <p>The app connects you to the talented people that help to do your work</p>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="imagespf-11.png">
+                    <div class="layer">
+                    <h3>Portfolio</h3>
+                    <p>portfolio for making person's life easier for finding job or customers</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="imagespf-3.jpg">
+                    <div class="layer">
+                    <h3>Yoga App</h3>
+                    <p>The app connects you to health, Guide you for yoga practices for your health.</p>
+                </div>
+            </div>
+
+            </div>
+            <a href="#" class="btn">More</a>
+        </div>
+    </div>
+
+    
+
+        
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer',  'UI/UX Developer', '&amp; App developer'],
+            typeSpeed: 50,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
+
